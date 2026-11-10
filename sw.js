@@ -1,6 +1,6 @@
 // Service worker FitApp – pozwala działać offline.
 // Po każdej zmianie aplikacji podbij numer wersji, żeby telefony pobrały nowe pliki.
-const CACHE = 'fitapp-v2';
+const CACHE = 'fitapp-v3';
 const SHELL = ['./', './index.html', './manifest.json', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 const CDN = ['https://cdn.jsdelivr.net/'];
 
