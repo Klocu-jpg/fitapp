@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#16a34a">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icons/icon-192.png">
@@ -21,7 +21,7 @@
 @media (prefers-color-scheme: dark){
   :root{--bg:#0f1115; --card:#181b21; --text:#eef0f3; --muted:#9aa1ac; --line:#2a2e36;}
 }
-*{box-sizing:border-box}
+*{box-sizing:border-box;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 body{padding-bottom:84px}
 header{position:sticky;top:0;z-index:5;background:var(--bg);padding:14px 16px 8px;display:flex;align-items:center;justify-content:space-between}
@@ -40,7 +40,7 @@ button.blue{background:var(--accent2);border-color:var(--accent2);color:#fff}
 button.ghost{background:transparent;border-color:transparent;color:var(--muted);padding:4px 8px}
 button.danger{color:var(--danger)}
 button:disabled{opacity:.5}
-input,select,textarea{font:inherit;width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text)}
+input,select,textarea{font:inherit;font-size:16px;width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text)}
 label{display:block;font-size:13px;color:var(--muted);margin-bottom:8px}
 label > input,label > select{margin-top:3px}
 nav{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:6px 4px calc(6px + env(safe-area-inset-bottom));z-index:10}
